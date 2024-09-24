@@ -1,0 +1,328 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbf2ff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    
+}
+
+.left {
+    color: black;
+    margin: 30px;
+    margin-left: 72px;
+}
+
+.left img {
+    width: 87px;
+}
+
+.left div {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 18px;
+}
+
+.logo span {
+    color: brown;
+    font-size: 22px;
+}
+
+.mid {
+    color: black;
+    margin: 56px auto;
+    margin-left: 389px;
+}
+
+.right {
+    color: black;
+    margin: 50px;
+    margin-right: 72px;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin: 0 10px;
+    color: #2d010b;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.282);
+    font-family: "Mukta", sans-serif;
+    white-space: nowrap;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(112, 0, 0);
+    color: #fbf2ff;
+}
+
+section div {
+    text-align: center;
+}
+
+section p {
+    font-size: 20px;
+    font-family: "Mukta", sans-serif;
+    
+}
+#head{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+}
+
+section p span {
+    font-size: 40px;
+    color: rgb(149, 27, 27);
+}
+section h2{
+    font-size: 36px;
+}
+/* Navigation styles */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    border: none; /* Remove any borders */
+    outline: none;
+}
+
+.navbar li a {
+    color: #62445dcc;
+    text-decoration: none  !important;
+    padding: 34px 23px;
+    font-size: 22px;
+    font-family: "Mukta", sans-serif;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: rgb(41, 1, 1);
+    
+}
+
+/* Button styles */
+.btn1 {
+    background-color: rgb(240, 243, 243);
+    width: 100px;
+    color: rgb(21, 15, 15);
+    border: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.login-modal,
+.account-modal,
+.password-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.login-modal.active,
+.account-modal.active,
+.password-modal.active {
+    display: block;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.login-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 20px;
+    width: 300px;
+}
+
+.login-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.login-card h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.login-card p {
+    margin: 10px 0 20px;
+    color: #555;
+}
+
+.login-card .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.options {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.options .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options a {
+    color: #ea0000;
+    text-decoration: none;
+}
+
+.options .links a {
+    margin-right: 15px;
+}
+
+.account-modal,
+.password-modal {
+    text-align: center;
+}
+
+.account-modal h2,
+.password-modal h2 {
+    margin-bottom: 20px;
+}
+
+.account-modal form,
+.password-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-modal input,
+.password-modal input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    /* border: 1px solid #ccc; */
+    font-family: "Mukta", sans-serif;
+}
+
+section h2 {
+    color: #d9534f;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Mukta", sans-serif;
+}
+
+.service img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.service h3 {
+    margin: 0;
+    color: #d9534f;
+}
+#contact{
+    border: 1px solid #ccc;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c9302c;
+}
+
+footer {
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+}

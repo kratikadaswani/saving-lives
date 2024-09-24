@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Lives</title>
+    <link rel="stylesheet" href="bb.css">
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        function toggleLoginForm() {
+            const loginModal = document.getElementById('login-modal');
+            const overlay = document.getElementById('overlay');
+            loginModal.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function toggleAccountForm() {
+            const accountModal = document.getElementById('account-modal');
+            const overlay = document.getElementById('overlay');
+            accountModal.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function togglePasswordForm() {
+            const passwordModal = document.getElementById('password-modal');
+            const overlay = document.getElementById('overlay');
+            passwordModal.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        function hideAllModals() {
+            const loginModal = document.getElementById('login-modal');
+            const accountModal = document.getElementById('account-modal');
+            const passwordModal = document.getElementById('password-modal');
+            const overlay = document.getElementById('overlay');
+
+            loginModal.classList.remove('active');
+            accountModal.classList.remove('active');
+            passwordModal.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+       
+        
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="logo3.png" alt="Saving Lives Logo">
+            <div class="logo"> <span>S</span>aving <span>L</span>ives</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" >About</a></li>
+                    <li><a href="#" >Blogs</a></li>
+                    <li><a href="#" style="white-space: nowrap;">Customer reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="button-container">
+                <button class="btn" onclick="toggleLoginForm()">Login</button>
+                <button class="btn">Contact us</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p id="head">"Your little effort can give someone a
+                    <span>Second chance</span> to live life!"
+                </p>
+                <img src="bgg.png" alt="Background Image">
+            </div>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to the Blood Bank Donation System, where saving lives is our top priority. Our organization is dedicated to maintaining a stable and safe blood supply to meet the needs of hospitals and patients. We work tirelessly to ensure that every donation is used effectively and efficiently to help those in need.</p>
+                <p>Our mission is to foster a community of donors committed to providing life-saving blood and blood products. We adhere to the highest standards of safety and quality in every step of the donation process, from collection to distribution. By promoting awareness and facilitating easy access to donation opportunities, we aim to build a robust network of compassionate individuals ready to make a difference.</p>
+                <p>Join us in our efforts to save lives and support our community. Your contribution can make a significant impact. Together, we can ensure that no one has to wait for the blood they need.</p>
+            </section>
+            
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="service">
+                    <img src="img1.png" alt="Blood Donation">
+                    <h3>Blood Donation</h3>
+                    <p>We organize blood donation drives and provide facilities for individuals to donate blood safely. Your donation can save multiple lives.</p>
+                </div>
+                <div class="service">
+                    <img src="img2.avif" alt="Blood Testing">
+                    <h3>Blood Testing</h3>
+                    <p>All donated blood is rigorously tested to ensure it is safe for transfusion. We adhere to strict quality standards to protect recipients.</p>
+                </div>
+                <div class="service">
+                    <img src="img3.jpg" alt="Blood Distribution">
+                    <h3>Blood Distribution</h3>
+                    <p>We ensure that blood and blood products are available to hospitals and clinics whenever they are needed. Timely delivery is our priority.</p>
+                </div>
+                <div class="service">
+                    <img src="img4.jpg" alt="Community Awareness">
+                    <h3>Community Awareness</h3>
+                    <p>We conduct awareness programs to educate the community about the importance of blood donation and how they can contribute.</p>
+                </div>
+            </section>
+            
+            <section id="donors">
+                <h2>Our Donors</h2>
+                <p>Meet our dedicated donors who help save lives every day. <a href="#register">Register</a> to become a donor.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            
+            <footer>
+                <p>&copy; 2024 Blood Bank Donation System. All rights reserved.</p>
+            </footer>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="overlay" class="overlay" onclick="hideAllModals()"></div>
+    <div id="login-modal" class="login-modal">
+        <div class="login-container">
+            <div class="login-card">
+                <img src="doctor.png" alt="Doctor Login">
+                <h2>Donor login</h2>
+                <p>Welcome to Saving Lives. Login your details to start transforming the hospital with an intelligent
+                    HMS.</p>
+                    <input class="btn1" type="text" placeholder="Username" required>
+                    <input class="btn1" type="password" placeholder="Password" required>
+                <button class="btn" onclick="toggleLoginForm()">SIGN IN</button>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Keep Me Signed in
+                    </label>
+                    <div class="links">
+                        <a href="#" onclick="toggleLoginForm(); togglePasswordForm();">Forgot your Password?</a>
+                        <a href="#" onclick="toggleLoginForm(); toggleAccountForm();">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login-card">
+                <img src="patient.png" alt="Patient Login">
+                <h2>Reciever login</h2>
+                <p>Login into your account to book appointments with doctors, access health records, and understand your
+                    healthcare journey better.</p>
+                    <input class="btn1" type="text" placeholder="Username" required>
+                    <input class="btn1" type="password" placeholder="Password" required>
+                <button class="btn" onclick="toggleLoginForm()">SIGN IN</button>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Keep Me Signed in
+                    </label>
+                    <div class="links">
+                        <a href="#" onclick="toggleLoginForm(); togglePasswordForm();">Forgot your Password?</a>
+                        <a href="#" onclick="toggleLoginForm(); toggleAccountForm();">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Modal -->
+    <div id="account-modal" class="account-modal">
+        <h2>Create an Account</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button class="btn" type="submit">Create Account</button>
+        </form>
+    </div>
+
+    <!-- Password Reset Modal -->
+    <div id="password-modal" class="password-modal">
+        <h2>Reset Your Password</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <button class="btn" type="submit">Reset Password</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
